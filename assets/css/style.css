@@ -1,0 +1,246 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+/* header section start */
+header{
+    width: 100%;
+    height: auto;
+    line-height: 40px;
+    color: #fff;
+    display: flex;
+    background-color: #022d70;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 5%;
+}
+/* header section end */
+/* section start */
+
+.banner{
+    width: 100%;
+     height: 520px;
+     color: #FFF;
+     display: flex;
+     justify-content: space-between;
+     padding: 0 10%;
+     align-items: center;
+     background: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),
+      url("../img/ind.webp");
+      background-size: cover;
+ 
+ }
+ .banner h1{
+    
+     font-size: 40px;
+     font-weight: normal;
+ }
+ .banner h1 span{
+     display: block;
+     font-size: 50px;
+     font-weight: 600;
+ }
+ .banner aside{
+     padding: 20px;
+     border-radius:7px;
+     text-align: center;
+     background: #022d7c;
+ }
+ .banner aside input[type],
+ .banner aside textarea,
+ .banner aside button{
+     width: 100%;
+     margin: 7px;
+     height: 40px;
+     text-align: center;
+ }
+ .banner aside button{
+    background-color: #01fafa;
+ }
+ .feature{
+    width: 100%;
+    height: auto;
+    display: flex;
+    padding: 40px 40px;
+    justify-content: center;
+    margin-top: 10px;
+    
+ }
+ 
+ .feature img{
+    width: 90%;
+}
+.feature div p{
+    padding-right: 10px;
+}
+/* about section start */
+
+.about{
+    width: 100%;
+    background-color: #022D7C;
+    color: #FFF;
+    padding: 2% 15%;
+    text-align: center;
+    font-size: 110%;
+    justify-content: center;
+}
+.about button{
+    margin-top: 3%;
+    background-color: #022D7C;
+    border: 2px solid #FFF;
+    padding: 1% 15%;
+    color: #fff;
+    font-size: 100%;
+}
+/* gallery section start */
+.gallery{
+    width: 100%;
+    height:auto;
+    padding: 0px 100px;
+}
+.gallery .uppar , .gallery .lower{
+    display: flex;
+    align-items: center;
+}
+.gallery .image,
+.gallery .content{
+    width: 50%;
+}
+.gallery .image img{
+    max-width: 100%;
+    height: auto;
+
+}
+.uppar #all{
+    padding-left: 5%;
+}
+#dolor{
+    padding-right: 5%;
+}
+/* gallery section end */
+/* footer section start */
+footer{
+    width: 100%;
+    height: auto;
+    background-color: #022d7c;
+    padding: 40px 100px;
+    color: #fff;
+    margin-top: 25px;
+    text-align: center;
+}
+footer .all{
+    font-size: 25px;
+    font-weight: bold;
+
+}
+/* footer section end */
+/* media query section start */
+@media screen and (max-width: 1200px){
+    .gallert .image img{
+
+    }
+}
+@media screen and (max-width: 992px){
+    .gallery .image img{
+
+    }
+    .gallery .lower .content{
+        padding-right: 15px;
+    }
+}
+@media screen and (max-width: 768px){
+    .banner h1{
+        font-size: 28px;
+        font-weight: normal;
+    }
+    .banner h1 span{
+        font-size: 31px;
+        font-weight: 600;
+    }
+    .feature h2{
+        font-size: 18px;
+        font-weight: bold;
+
+    }
+    .gallery .lower, .image .content{
+        padding: 0px;
+    }
+    .gallery .uppar, .image .content{
+        padding: 0px;
+    }
+}
+@media screen and (max-width: 576px){
+    header{
+        display: block;
+        text-align: center;
+    }
+    .banner{
+    
+        height: auto;
+        flex-direction: column;
+        justify-content: right;
+        padding: 20px;
+    }
+    .banner main{
+        text-align: center;
+        margin: 20px;
+
+    }
+    .banner main h1{
+        font-size: 45px;
+    }
+    aside{
+        width: 100%;
+    }
+    aside table{
+        width: 100%;
+    }
+    .feature{
+        width: 100%;
+        flex-direction: column;
+        margin: 40px 0px;
+        padding-right: 4%;
+        text-align: justify;
+
+    }
+    .gallery{
+        width: 100%;
+        padding: 0px;
+    }
+    .gallery .uppar , .gallery .lower{
+        width: 100%;
+        flex-direction: column;
+        padding: 0px;
+        align-items: center;
+    }
+    .gallery .imge,
+    .gallery .content{
+        width: 100%;
+    }
+    .gallery .uppar .image, .gallery .lower .image{
+        width: 98%;
+        padding: 0 1%;
+        height: auto;
+    }
+    .gallery .uppar .image img, .gallery .lower .image img{
+        width: 100%;
+        height: auto;
+    }
+    .gallery .content{
+        width: 100%;
+        padding: 4%;
+    }
+    #all{
+        padding-top: 2%;
+        padding-left: -13%;
+    }
+    .uppar{
+        padding: 0px;
+    }
+    footer .all{
+        font-size: 12px;
+        font-weight: bold;
+    }
+}
+/* media query section end */
